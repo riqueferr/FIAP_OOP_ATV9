@@ -23,7 +23,7 @@ public class Main {
         u.setUser("Henrique");
         u.setPassword("senhaErrada");
         //Exemplo de tentativa de login com senha errada
-        u.logar();
+//        u.logar();
 
         System.out.println("");
         System.out.println("");
@@ -39,6 +39,5 @@ public class Main {
 
         //Calculando IMC e informando a categoria!
         i.calcular();
-
     }
 }
