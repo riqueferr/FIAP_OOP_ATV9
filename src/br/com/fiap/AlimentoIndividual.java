@@ -1,5 +1,6 @@
 package br.com.fiap;
 
+
 public class AlimentoIndividual {
 
     private Integer idAlimento;
