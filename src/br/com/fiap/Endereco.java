@@ -1,7 +1,7 @@
 package br.com.fiap;
 
 /**
- * Classe para criar endereços dos usuários
+ * Classe para criar endereços dos usuarios
  * @author Henrique de Luca
  * @version 1.0
  */

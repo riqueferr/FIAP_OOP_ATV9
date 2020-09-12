@@ -1,7 +1,7 @@
 package br.com.fiap;
 
 /**
- * Interface para iniciar ou finalizar exercícios
+ * Interface para iniciar ou finalizar exercicios
  * @author Guilherme Vilhena
  * @version 1.0
  */

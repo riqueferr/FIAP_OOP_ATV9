@@ -3,7 +3,7 @@ package br.com.fiap;
 import java.util.Date;
 
 /**
- * Classe que irá criar a refeição completo do dia
+ * Classe que irá criar a refeicao completo do dia
  * @author Guilherme Vilhena
  * @version 1.0
  */

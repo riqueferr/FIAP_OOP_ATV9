@@ -1,7 +1,7 @@
 package br.com.fiap;
 
 /**
- * Classe para informar o plano que irá assinar
+ * Classe para informar o plano que ira assinar
  * @author Henrique de Luca
  * @version 1.0
  */

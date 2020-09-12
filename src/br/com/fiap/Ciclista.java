@@ -1,6 +1,6 @@
 package br.com.fiap;
 /**
- * Classe para criação do Ciclista
+ * Classe para criacao do Ciclista
  * @author Paola Assis
  * @version 1.0
  */

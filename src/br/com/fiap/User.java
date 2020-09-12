@@ -1,7 +1,7 @@
 package br.com.fiap;
 
 /**
- * Classe para criação do usuário no sistema
+ * Classe para criacao do usuario no sistema
  * @author Luiz Henrique Ferreira
  * @version 1.0
  */
