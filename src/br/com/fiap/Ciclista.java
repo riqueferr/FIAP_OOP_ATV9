@@ -1,18 +1,34 @@
 package br.com.fiap;
+/**
+ * Classe para criação do Ciclista
+ * @author Paola Assis
+ * @version 1.0
+ */
+public class Ciclista {
 
-public class Ciclismo {
-
+    /**
+     * tipo da bicicleta ex: tricículo
+     */
     private String tipoBicicleta;
+
+    /**
+     * a marca da bicicleta
+     */
     private String bicicleta;
+
+    /**
+     * quantidade de rodas que a bicicleta contém
+     */
     private Integer rodas;
 
-    public Ciclismo(String tipoBicicleta, String bicicleta, Integer rodas) {
+
+    public Ciclista(String tipoBicicleta, String bicicleta, Integer rodas) {
         this.tipoBicicleta = tipoBicicleta;
         this.bicicleta = bicicleta;
         this.rodas = rodas;
     }
 
-    public Ciclismo() {
+    public Ciclista() {
     }
 
     public String getTipoBicicleta() {
@@ -39,10 +55,17 @@ public class Ciclismo {
         this.rodas = rodas;
     }
 
+
+    /**
+     * começará a pedalar
+     */
     public void pedalar(){
         //TODO
     }
 
+    /**
+     * irá parar de pedalar
+     */
     public void freiar(){
         //TODO
     }

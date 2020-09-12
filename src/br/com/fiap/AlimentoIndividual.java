@@ -1,11 +1,29 @@
 package br.com.fiap;
 
-
+/**
+ * Classe para criar consumo individual de alimento
+ * @author Henrique de Luca
+ * @version 1.0
+ */
 public class AlimentoIndividual {
 
+    /**
+     * código do alimento
+     */
     private Integer idAlimento;
+    /**
+     * descrição da refeição (nome ou período)
+     */
     private String descricao;
+
+    /**
+     * valor individual das calorias do alimento
+     */
     private Integer valorCaloria;
+
+    /**
+     * quantidade ingerida
+     */
     private Integer quantidade;
 
     public AlimentoIndividual(Integer idAlimento, String descricao, Integer valorCaloria, Integer quantidade) {

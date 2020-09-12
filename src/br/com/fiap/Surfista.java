@@ -1,8 +1,20 @@
 package br.com.fiap;
 
+/**
+ * Classe para criar o surfista
+ * @author Gustavo Petry
+ * @version 1.0
+ */
 public class Surfista extends Atividade {
 
+    /**
+     * nome do local que irá praticar
+     */
     private String localizarMar;
+
+    /**
+     * se está utilizando prancha ou não
+     */
     private boolean prancha;
 
     public Surfista(String localizarMar, boolean prancha) {
@@ -29,6 +41,10 @@ public class Surfista extends Atividade {
         this.prancha = prancha;
     }
 
+
+    /**
+     * escolherá um tipo de prancha para utilizar
+     */
     public void escolherPrancha(){
         //TODO
     }

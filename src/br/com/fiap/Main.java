@@ -14,16 +14,16 @@ public class Main {
         //visualizando senha informada
         System.out.println("Senha inserida foi: " + u.getPassword());
         //"logando"
-        u.logar();
+        System.out.println(u.logar());
         //"deslogando"
-        u.deslogar();
+        System.out.println(u.deslogar());
         //tentativa de "deslogar" sem estar "logado
-        u.deslogar();
+        System.out.println(u.deslogar());
         //informando login correto e senha incorreta
         u.setUser("Henrique");
         u.setPassword("senhaErrada");
         //Exemplo de tentativa de login com senha errada
-//        u.logar();
+        System.out.println(u.logar());
 
         System.out.println("");
         System.out.println("");
