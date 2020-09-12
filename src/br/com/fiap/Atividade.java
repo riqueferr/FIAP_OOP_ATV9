@@ -9,6 +9,14 @@ import java.util.Date;
  */
 abstract class Atividade {
 
+    public Atividade(Integer idAtividade, Date dtRegistro) {
+        this.idAtividade = idAtividade;
+        this.dtRegistro = dtRegistro;
+    }
+
+    public Atividade() {
+    }
+
     /**
      * Código de registro da atividade.
      */
@@ -18,6 +26,8 @@ abstract class Atividade {
      * Data de registro da atividade.
      */
     private Date dtRegistro;
+
+    private static Integer sequencia = 0;
 
 
     public Integer getIdAtividade() {
@@ -37,11 +47,19 @@ abstract class Atividade {
     }
 
 
-    /**
-     * irá adicionar uma atividade
-     */
-    public void adicionar(){
-        //TODO
+//    public Integer adicionar() {
+//        if (this.getIdAtividade() == null) {
+//            this.setIdAtividade(this.getIdAtividade() + 1);
+//        } else {
+//            this.setIdAtividade(this.getIdAtividade() + 1);
+//        }
+//        return getIdAtividade();
+//    }
+//
+
+    public Integer adicionar(){
+        this.idAtividade = sequencia++;
+        return this.getIdAtividade();
     }
 
     /**
@@ -53,8 +71,13 @@ abstract class Atividade {
 
     /**
      * irá excluir uma atividade
+     * @return
      */
-    public void excluir(){
-        //TODO
+    public Integer excluir(){
+        this.idAtividade = sequencia--;
+        return this.getIdAtividade();
     }
+
+
+
 }

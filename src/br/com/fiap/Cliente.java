@@ -3,7 +3,7 @@ package br.com.fiap;
 import java.util.Date;
 
 /**
- * Classe para criação de Clientes do sistema
+ * Classe para criacao de Clientes do sistema
  * @author Guilherme Vilhena
  * @version 1.0
  */

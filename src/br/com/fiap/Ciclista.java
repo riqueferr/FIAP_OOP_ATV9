@@ -1,10 +1,13 @@
 package br.com.fiap;
+
+import java.util.Date;
+
 /**
- * Classe para criação do Ciclista
+ * Classe para criacao do Ciclista
  * @author Paola Assis
  * @version 1.0
  */
-public class Ciclista {
+public class Ciclista extends Atividade{
 
     /**
      * tipo da bicicleta ex: tricículo
@@ -27,6 +30,14 @@ public class Ciclista {
         this.bicicleta = bicicleta;
         this.rodas = rodas;
     }
+
+    public Ciclista(Integer idAtividade, Date dtRegistro, String tipoBicicleta, String bicicleta, Integer rodas) {
+        super(idAtividade, dtRegistro);
+        this.tipoBicicleta = tipoBicicleta;
+        this.bicicleta = bicicleta;
+        this.rodas = rodas;
+    }
+
 
     public Ciclista() {
     }
@@ -68,6 +79,16 @@ public class Ciclista {
      */
     public void freiar(){
         //TODO
+    }
+
+    @Override
+    public Integer adicionar() {
+        return super.adicionar();
+    }
+
+    @Override
+    public Integer excluir() {
+        return super.excluir();
     }
 
 }

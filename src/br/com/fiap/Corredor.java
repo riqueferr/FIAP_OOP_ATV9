@@ -1,11 +1,13 @@
 package br.com.fiap;
 
+import java.util.Date;
+
 /**
  * Classe para criar o Corredor
  * @author Gustavo Petry
  * @version 1.0
  */
-public class Corredor {
+public class Corredor extends Atividade {
 
     /**
      * distancia em km do percurso
@@ -26,6 +28,13 @@ public class Corredor {
     }
 
     public Corredor(double distancia, String tenis, Integer tamanhoPe) {
+        this.distancia = distancia;
+        this.tenis = tenis;
+        this.tamanhoPe = tamanhoPe;
+    }
+
+    public Corredor(Integer idAtividade, Date dtRegistro, double distancia, String tenis, Integer tamanhoPe) {
+        super(idAtividade, dtRegistro);
         this.distancia = distancia;
         this.tenis = tenis;
         this.tamanhoPe = tamanhoPe;
@@ -62,4 +71,16 @@ public class Corredor {
     public void colocarTenis(){
         //TODO
     }
+
+    @Override
+    public Integer adicionar() {
+        return super.adicionar();
+    }
+
+    @Override
+    public Integer excluir() {
+        return super.excluir();
+    }
+
+
 }

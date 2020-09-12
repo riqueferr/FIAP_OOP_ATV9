@@ -1,5 +1,7 @@
 package br.com.fiap;
 
+import java.util.ServiceLoader;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -39,5 +41,16 @@ public class Main {
 
         //Calculando IMC e informando a categoria!
         i.calcular();
+
+
+
+        Skatista s = new Skatista();
+        Corredor c = new Corredor();
+        Skatista a = new Skatista();
+
+        System.out.println(c.adicionar());
+        System.out.println(s.adicionar());
+        System.out.println(a.adicionar());
+
     }
 }

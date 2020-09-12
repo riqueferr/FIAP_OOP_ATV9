@@ -1,11 +1,13 @@
 package br.com.fiap;
 
+import java.util.Date;
+
 /**
  * Classe para criar o Skatista
  * @author Guilherme Vilhena
  * @version 1.0
  */
-public class Skatista {
+public class Skatista extends Atividade {
 
     /**
      * informar a quantidade de rolamento que contém no skate
@@ -23,6 +25,13 @@ public class Skatista {
     private Integer rodas;
 
     public Skatista(Integer rolamento, String shape, Integer rodas) {
+        this.rolamento = rolamento;
+        this.shape = shape;
+        this.rodas = rodas;
+    }
+
+    public Skatista(Integer idAtividade, Date dtRegistro, Integer rolamento, String shape, Integer rodas) {
+        super(idAtividade, dtRegistro);
         this.rolamento = rolamento;
         this.shape = shape;
         this.rodas = rodas;
@@ -55,6 +64,8 @@ public class Skatista {
         this.rodas = rodas;
     }
 
+
+
     /**
      * irá iniciar a atividade remando
      */
@@ -75,4 +86,16 @@ public class Skatista {
     public void freiar(){
         //TODO
     }
+
+    @Override
+    public Integer adicionar() {
+        return super.adicionar();
+    }
+
+    @Override
+    public Integer excluir() {
+        return super.excluir();
+    }
+
+
 }
