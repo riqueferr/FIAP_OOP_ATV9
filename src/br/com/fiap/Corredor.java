@@ -72,5 +72,15 @@ public class Corredor extends Atividade {
         //TODO
     }
 
+    @Override
+    public Integer adicionar() {
+        return super.adicionar();
+    }
+
+    @Override
+    public Integer excluir() {
+        return super.excluir();
+    }
+
 
 }

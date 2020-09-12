@@ -46,6 +46,11 @@ public class Main {
 
         Skatista s = new Skatista();
         Corredor c = new Corredor();
+        Skatista a = new Skatista();
+
+        System.out.println(c.adicionar());
+        System.out.println(s.adicionar());
+        System.out.println(a.adicionar());
 
     }
 }

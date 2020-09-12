@@ -27,14 +27,15 @@ abstract class Atividade {
      */
     private Date dtRegistro;
 
+    private static Integer sequencia = 0;
+
 
     public Integer getIdAtividade() {
         return idAtividade;
     }
 
-    public int setIdAtividade(Integer idAtividade) {
+    public void setIdAtividade(Integer idAtividade) {
         this.idAtividade = idAtividade;
-        return 0;
     }
 
     public Date getDtRegistro() {
@@ -46,10 +47,20 @@ abstract class Atividade {
     }
 
 
+//    public Integer adicionar() {
+//        if (this.getIdAtividade() == null) {
+//            this.setIdAtividade(this.getIdAtividade() + 1);
+//        } else {
+//            this.setIdAtividade(this.getIdAtividade() + 1);
+//        }
+//        return getIdAtividade();
+//    }
+//
 
-    public void adicionar() {
+    public Integer adicionar(){
+        this.idAtividade = sequencia++;
+        return this.getIdAtividade();
     }
-
 
     /**
      * irá editar uma atividade existente
@@ -60,9 +71,11 @@ abstract class Atividade {
 
     /**
      * irá excluir uma atividade
+     * @return
      */
-    public void excluir(){
-        //TODO
+    public Integer excluir(){
+        this.idAtividade = sequencia--;
+        return this.getIdAtividade();
     }
 
 

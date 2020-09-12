@@ -88,8 +88,14 @@ public class Skatista extends Atividade {
     }
 
     @Override
-    public void adicionar() {
-
+    public Integer adicionar() {
+        return super.adicionar();
     }
+
+    @Override
+    public Integer excluir() {
+        return super.excluir();
+    }
+
 
 }

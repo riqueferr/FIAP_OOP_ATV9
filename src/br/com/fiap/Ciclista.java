@@ -7,7 +7,7 @@ import java.util.Date;
  * @author Paola Assis
  * @version 1.0
  */
-public class Ciclista extends Cliente{
+public class Ciclista extends Atividade{
 
     /**
      * tipo da bicicleta ex: tricículo
@@ -31,12 +31,13 @@ public class Ciclista extends Cliente{
         this.rodas = rodas;
     }
 
-    public Ciclista(String nome, Integer idade, Date dtNascimento, Date dtCadastro, String tipoBicicleta, String bicicleta, Integer rodas) {
-        super(nome, idade, dtNascimento, dtCadastro);
+    public Ciclista(Integer idAtividade, Date dtRegistro, String tipoBicicleta, String bicicleta, Integer rodas) {
+        super(idAtividade, dtRegistro);
         this.tipoBicicleta = tipoBicicleta;
         this.bicicleta = bicicleta;
         this.rodas = rodas;
     }
+
 
     public Ciclista() {
     }
@@ -78,6 +79,16 @@ public class Ciclista extends Cliente{
      */
     public void freiar(){
         //TODO
+    }
+
+    @Override
+    public Integer adicionar() {
+        return super.adicionar();
+    }
+
+    @Override
+    public Integer excluir() {
+        return super.excluir();
     }
 
 }
