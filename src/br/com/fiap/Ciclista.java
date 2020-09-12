@@ -1,10 +1,13 @@
 package br.com.fiap;
+
+import java.util.Date;
+
 /**
  * Classe para criacao do Ciclista
  * @author Paola Assis
  * @version 1.0
  */
-public class Ciclista {
+public class Ciclista extends Cliente{
 
     /**
      * tipo da bicicleta ex: tricículo
@@ -23,6 +26,13 @@ public class Ciclista {
 
 
     public Ciclista(String tipoBicicleta, String bicicleta, Integer rodas) {
+        this.tipoBicicleta = tipoBicicleta;
+        this.bicicleta = bicicleta;
+        this.rodas = rodas;
+    }
+
+    public Ciclista(String nome, Integer idade, Date dtNascimento, Date dtCadastro, String tipoBicicleta, String bicicleta, Integer rodas) {
+        super(nome, idade, dtNascimento, dtCadastro);
         this.tipoBicicleta = tipoBicicleta;
         this.bicicleta = bicicleta;
         this.rodas = rodas;

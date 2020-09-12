@@ -1,11 +1,13 @@
 package br.com.fiap;
 
+import java.util.Date;
+
 /**
  * Classe para criar Triatletas
  * @author Henrique de Luca
  * @version 1.0
  */
-public class Triatletas {
+public class Triatletas extends Atividade{
 
     /**
      * descrição do tipo de percurso
@@ -28,8 +30,16 @@ public class Triatletas {
         this.dificuldade = dificuldade;
     }
 
+    public Triatletas(Integer idAtividade, Date dtRegistro, String tipoPercurso, Integer distanciaKm, Integer dificuldade) {
+        super(idAtividade, dtRegistro);
+        this.tipoPercurso = tipoPercurso;
+        this.distanciaKm = distanciaKm;
+        this.dificuldade = dificuldade;
+    }
+
     public Triatletas() {
     }
+
 
     public String getTipoPercurso() {
         return tipoPercurso;
@@ -75,4 +85,6 @@ public class Triatletas {
     public void pedalar(){
         //TODO
     }
+
+
 }

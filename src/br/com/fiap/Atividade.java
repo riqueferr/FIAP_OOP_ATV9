@@ -9,6 +9,14 @@ import java.util.Date;
  */
 abstract class Atividade {
 
+    public Atividade(Integer idAtividade, Date dtRegistro) {
+        this.idAtividade = idAtividade;
+        this.dtRegistro = dtRegistro;
+    }
+
+    public Atividade() {
+    }
+
     /**
      * Código de registro da atividade.
      */
@@ -24,8 +32,9 @@ abstract class Atividade {
         return idAtividade;
     }
 
-    public void setIdAtividade(Integer idAtividade) {
+    public int setIdAtividade(Integer idAtividade) {
         this.idAtividade = idAtividade;
+        return 0;
     }
 
     public Date getDtRegistro() {
@@ -37,12 +46,10 @@ abstract class Atividade {
     }
 
 
-    /**
-     * irá adicionar uma atividade
-     */
-    public void adicionar(){
-        //TODO
+
+    public void adicionar() {
     }
+
 
     /**
      * irá editar uma atividade existente
@@ -57,4 +64,7 @@ abstract class Atividade {
     public void excluir(){
         //TODO
     }
+
+
+
 }

@@ -1,5 +1,7 @@
 package br.com.fiap;
 
+import java.util.Date;
+
 /**
  * Classe para criar o surfista
  * @author Gustavo Petry
@@ -22,8 +24,16 @@ public class Surfista extends Atividade {
         this.prancha = prancha;
     }
 
+    public Surfista(Integer idAtividade, Date dtRegistro, String localizarMar, boolean prancha) {
+        super(idAtividade, dtRegistro);
+        this.localizarMar = localizarMar;
+        this.prancha = prancha;
+    }
+
     public Surfista() {
     }
+
+
 
     public String getLocalizarMar() {
         return localizarMar;
@@ -48,4 +58,6 @@ public class Surfista extends Atividade {
     public void escolherPrancha(){
         //TODO
     }
+
+
 }
