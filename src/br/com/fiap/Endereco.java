@@ -1,11 +1,35 @@
 package br.com.fiap;
 
+/**
+ * Classe para criar endereços dos usuários
+ * @author Henrique de Luca
+ * @version 1.0
+ */
 public class Endereco {
 
+    /**
+     * código do endereço
+     */
     private Integer idEndereco;
+
+    /**
+     * endereço do usuário
+     */
     private String descricao;
+
+    /**
+     * cep do endereço passado pelo usuário
+     */
     private String cep;
+
+    /**
+     * bairro do endereço do usuário
+     */
     private String bairro;
+
+    /**
+     * estado do endereço do usuário
+     */
     private String estado;
 
     public Endereco(Integer idEndereco, String descricao, String cep, String bairro, String estado) {
@@ -59,10 +83,17 @@ public class Endereco {
         this.estado = estado;
     }
 
+
+    /**
+     * poderá cadastrar um novo endereço
+     */
     public void cadastrar(){
         //TODO
     }
 
+    /**
+     * poderá excluir um endereço existente
+     */
     public void excluir(){
         //TODO
     }

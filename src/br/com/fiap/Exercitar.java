@@ -1,11 +1,23 @@
 package br.com.fiap;
 
+/**
+ * Interface para iniciar ou finalizar exercícios
+ * @author Guilherme Vilhena
+ * @version 1.0
+ */
 public interface Exercitar {
 
+    /**
+     * irá iniciar um exercício
+     */
      static void praticar(){
         //TODO
     }
-     static void parar(){
+
+    /**
+     * irá parar/finalizar o exercício
+     */
+    static void parar(){
          //TODO
     }
 }

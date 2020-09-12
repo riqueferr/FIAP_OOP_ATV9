@@ -1,8 +1,20 @@
 package br.com.fiap;
 
+/**
+ * Classe para criar/realizar o pagamento
+ * @author Paola Assis
+ * @version 1.0
+ */
 public class Pagamento {
 
+    /**
+     * código do pagamento
+     */
     private Integer idPagamento;
+
+    /**
+     * se foi ou não pago
+     */
     private boolean pago;
 
     public Pagamento(Integer idPagamento, boolean pago) {
@@ -29,6 +41,10 @@ public class Pagamento {
         this.pago = pago;
     }
 
+
+    /**
+     * irá registrar o pagamento no sistema
+     */
     public void registrar(){
         //TODO
     }

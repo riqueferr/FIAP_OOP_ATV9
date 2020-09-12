@@ -2,11 +2,28 @@ package br.com.fiap;
 
 import java.util.Date;
 
+/**
+ * Classe que irá criar a refeição completo do dia
+ * @author Guilherme Vilhena
+ * @version 1.0
+ */
 public class Alimento {
 
+    /**
+     * código do alimento
+     */
     private Integer idAlimento;
+
+    /**
+     * data de registro da refeição
+     */
     private Date dtRegistro;
+
+    /**
+     * quantidade total de calorias do alimento
+     */
     private double calorias;
+
 
     public Alimento(Integer idAlimento, Date dtRegistro, double calorias) {
         this.idAlimento = idAlimento;
@@ -41,14 +58,23 @@ public class Alimento {
         this.calorias = calorias;
     }
 
+    /**
+     * adiciona um novo alimento
+     */
     public void adicionar(){
         //TODO
     }
 
+    /**
+     * edita o alimento existente
+     */
     public void editar(){
         //TODO
     }
 
+    /**
+     * exclui o alimento, caso esteja incorreto
+     */
     public void excluir(){
         //TODO
     }

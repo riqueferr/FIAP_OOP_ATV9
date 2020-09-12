@@ -1,12 +1,25 @@
 package br.com.fiap;
 
+/**
+ * Classe para criar medidas e peso para calcular IMC
+ * @author Luiz Henrique Ferreira
+ * @version 1.0
+ */
 public class Imc {
 
+    /**
+     * altura do usuário
+     */
     private double height;
+
+    /**
+     * peso do usuário
+     */
     private double weight;
 
     public Imc() {
     }
+
 
     public Imc(double height, double weight) {
         this.height = height;
@@ -29,6 +42,9 @@ public class Imc {
         this.weight = weight;
     }
 
+    /**
+     * O método irá calcular o IMC de acordo com a altura e peso informado e dar o status da situação
+     */
     public void calcular() {
         double imc = this.weight / (this.height * this.height);
         System.out.printf("IMC: %.2f \n", imc);

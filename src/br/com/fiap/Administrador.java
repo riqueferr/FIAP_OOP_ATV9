@@ -1,7 +1,15 @@
 package br.com.fiap;
 
+/**
+ * Classe para criação do administrador do sistema
+ * @author Luiz Henrique Ferreira
+ * @version 1.0
+ */
 public class Administrador {
 
+    /**
+     * O administrador terá uma senha mestra.
+     */
     private String senhaAdm;
 
 
@@ -21,6 +29,10 @@ public class Administrador {
         this.senhaAdm = senhaAdm;
     }
 
+
+    /**
+     * atualiza o completamente o sistema
+     */
     public void atualizarSistema(){
         //TODO
     }
